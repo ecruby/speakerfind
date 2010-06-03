@@ -1,0 +1,3 @@
+haml --version '= 3.0.9'
+RedCloth --version '= 0.9.10'
+formtastic --version '= 0.9.10'
