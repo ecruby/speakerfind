@@ -3,5 +3,8 @@ tmp/**/*
 doc/api
 doc/app
 db/*.sqlite3
+db/*.sql
 config/database.yml
 config/email.yml
+spec/views/**/*
+spec/fixtures
