@@ -14,8 +14,10 @@ module NavigationHelpers
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
-    #   when /^(.*)'s profile page$/i
-    #     user_profile_path(User.find_by_login($1))
+    
+    when /^the activation link sent to "(.*)"$/i
+      @user = User.find_by_email($1)
+      new_activation_url(@user)
 
     else
       begin
