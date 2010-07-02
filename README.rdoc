@@ -1,4 +1,4 @@
-== Experts Dir Application setup
+== SpeakerFinder Application setup
 
 Clone the repository
 
@@ -12,3 +12,7 @@ Copy config/database.yml.example to config/database.yml.
 ==Run the setup task
 
   rake app:setup
+
+==Pivotal Tracker
+
+Visit http://www.pivotaltracker.com/projects/94138 and contact Brian if you want to be added to the team.
