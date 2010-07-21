@@ -7,4 +7,3 @@ Given /^I have signed up as a user with the first name "([^\"]*)", the last name
                        
                 
 end
-

@@ -12,12 +12,13 @@ module NavigationHelpers
       '/'
 
     # Add more mappings here.
-    # Here is an example that pulls values out of the Regexp:
-    #
     
+    when /the speaker profile\s?page/
+      @user = User.find(:first)
+      edit_profile_path(1)
+      
     when /^the activation link sent to "(.*)"$/i
-      @user = User.find_by_email($1)
-      new_activation_url(@user)
+      new_activation_url :email => $1
 
     else
       begin

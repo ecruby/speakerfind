@@ -13,11 +13,11 @@ describe ActivationsController do
   
   describe "activating a user" do
     it "should redirect to the profile edit page with a successful activation" do
-      
       create_user
-      
-      response.should redirect_to edit_profile_url
+      get :new, :email => "homer@simpsons.com"
+      response.should redirect_to edit_profile_url(@user)
     end
+    
   end
 
 end
